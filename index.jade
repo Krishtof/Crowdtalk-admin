@@ -1,0 +1,179 @@
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7  
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8  
+//if IE 8
+  html.no-js.lt-ie9  
+// [if gt IE 8] <!
+html.no-js
+  // <![endif]
+  html.no-js(lang='en')
+    head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      title Crowdtalk: Answers delivered.
+      meta(name='description', content='whatever')
+      meta(name='keywords', content='html5 template, css3, one page, animations, agency, portfolio, web design')
+      meta(name='author', content='Kristof Vizy')
+      // Bootstrap
+      script(src='js/modernizr.custom.js')
+      link(href='css/bootstrap.min.css', rel='stylesheet')
+      link(href='css/jquery.fancybox.css', rel='stylesheet')
+      link(href='css/flickity.css', rel='stylesheet')
+      link(href='css/animate.css', rel='stylesheet')
+      link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+      link(rel='shortcut icon', href='favicon.ico')
+      link(href='http://fonts.googleapis.com/css?family=Nunito:400,300,700', rel='stylesheet', type='text/css')
+      link(href='css/styles.css', rel='stylesheet')
+      link(href='css/queries.css', rel='stylesheet')
+      // Facebook and Twitter integration
+      meta(property='og:title', content='')
+      meta(property='og:image', content='')
+      meta(property='og:url', content='')
+      meta(property='og:site_name', content='')
+      meta(property='og:description', content='')
+      meta(name='twitter:title', content='')
+      meta(name='twitter:image', content='')
+      meta(name='twitter:url', content='')
+      meta(name='twitter:card', content='')
+      script(src='js/script.js')
+      // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+      // WARNING: Respond.js doesn't work if you view the page via file://
+      //if lt IE 9
+        script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+        script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    body
+      nav.navbar.navbar-default
+        .container-fluid.navfluid
+          .navbar-header
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              img(alt='Brand', src='img/logo.png')
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+       
+      section.about
+        .container.yellow
+          .col-md-12
+            .container
+              .col-md-6
+                .container
+                  .col-md-12#one
+              .col-md-6#bg
+                .container
+                  .col-md-12#two
+                    h2
+                      | Market research
+                      br
+                      |  was never so 
+                      span.txt-rotate(data-period='2000', data-rotate='[ "agile.", "affordable.", "fast.", "reliable." ]')
+
+                    p A market research tool that allows you to create targeted surveys and reward responders with a prize. Folow up results in the cloud live.
+      //if lt IE 7
+        p.browsehappy
+          | You are using an 
+          strong outdated
+          |  browser. Please 
+          a(href='http://browsehappy.com/') upgrade your browser
+          |  to improve your experience.
+      // open/close
+      .container-fluid
+        .row.new_old
+          .col-md-6#old.show
+            h3 The old way
+            #oldbg
+          .col-md-6#new.show
+            h3 The new way
+            #newbg
+      section.features-intro
+        .container-fluid
+          .row#featuresintro
+            .col-md-6.nopadding.features-intro-img
+              .features-bg
+                .texture-overlay
+                .features-img.wp1
+                  img(style="max-width: 70px;")(src='img/Cr_logo_small.png', alt='ct Logo')
+            .col-md-6.nopadding.gallery.js-flickity(data-flickity-options='{ "setGallerySize": false }')
+                  .gallery-cell
+                    h3.secondtitle How can Crowdtalk find the target group I define?
+                    p
+                      | Crowdtalk has an automated algorythm that uses social media to find the people you defined as a target group. All you need to do is defining the group, Crowdtalk does the rest. 
+
+                  .gallery-cell
+                    h3.secondtitle Why would anyone fill out the forms created with Crowdtalk?
+                    p
+                      | Responders are rewarded with a certain amount of money you define. This is the incentive that will motivate them to answer the questions. The amount you defined as a prize appears automaticaly on the account of the responders.  
+                      
+                  .gallery-cell
+                    h3.secondtitle How will I see the result of a campaign?
+                    p
+                      | After someone filled out a form you have created, your dashboard is updated with the new data, so that your reports are always up-to-date.
+
+
+      section.showcase
+        .showcase-wrap
+          .texture-overlay
+          .container
+            .row
+              .col-md-6
+                .device.wp3
+                  .device-content
+                    img(src='img/screen1.jpg', alt='Device Content Image')
+ 
+              .col-md-6(style="margin-top: 130px;")
+                h1 Reach your customers where they are
+                p
+                  | Crowdtalk can be accessed both on desktop and mobile. This allows you to better reach your customers and makes it more comfortable for them to answer your questions. 
+      section#download.download
+        .container
+          .row
+            .col-md-12.text-center.wp4
+              h1 Seen Enough?
+                  // Begin MailChimp Signup Form
+              #mc_embed_signup
+                form#mc-embedded-subscribe-form.validate(action='//albumer.us8.list-manage.com/subscribe/post?u=145fe3b5500fb6f343a7be5e4&id=3c3b3bcb07', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+                  #mc_embed_signup_scroll
+                    .mc-field-group
+                      input#mce-EMAIL.required.email(type='email', placeholder='Your email address', value='', name='EMAIL')
+                    #mce-responses.clear
+                      #mce-error-response.response(style='display:none')
+                      #mce-success-response.response(style='display:none')
+                    // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                    div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                      input(type='text', name='b_145fe3b5500fb6f343a7be5e4_3c3b3bcb07', tabindex='-1', value='')
+                    .clear
+                      input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')
+              // End mc_embed_signup
+      footer
+        .container
+          .row
+            .col-md-5
+              h1.footer-logo
+                img(src='img/logo-blue.png', alt='Footer Logo Blue')
+              p
+                |  - Designed & Developed by 
+                a(href='http://www.crowdtalk.com/') Kristof Vizy
+            .col-md-7
+
+      // jQuery (necessary for Bootstrap's JavaScript plugins)
+      script(src='js/min/toucheffects-min.js')
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+      script(src='js/flickity.pkgd.min.js')
+      script(src='js/jquery.fancybox.pack.js')
+      // Include all compiled plugins (below), or include individual files as needed
+      script(src='js/retina.js')
+      script(src='js/waypoints.min.js')
+      script(src='js/bootstrap.min.js')
+      script(src='js/min/scripts-min.js')
+      // Google Analytics: change UA-XXXXX-X to be your site's ID.
+      script.
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-73816189-1');ga('send','pageview');

@@ -1,0 +1,1 @@
+$(document).ready(function(){function t(t){t.value.length>0?t.classList.contains("active")||t.classList.add("active"):t.classList.contains("active")&&t.classList.remove("active")}for(var e=document.getElementsByClassName("m-input"),s=0;s<e.length;s++){var a=e[s];a.addEventListener("blur",function(){t(this)})}});
